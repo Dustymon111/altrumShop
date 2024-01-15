@@ -44,7 +44,7 @@ function App() {
                 <img className='justify-self-center' src={value.image} width = "200px" height="200px" alt="" />
                 <p className='truncate'>{value.nama}</p>
                 <p>Harga : {value.harga}</p>
-                {value.diskon !== 0 && <p className='absolute top-0 right-0 p-2 z-50 font-bold bg-red-600 text-white'>{value.diskon} Off%</p>}
+                {value.diskon !== 0 && <p className='z-0 absolute top-0 right-0 p-2 z-50 font-bold bg-red-600 text-white'>{value.diskon} Off%</p>}
                 <button className='text-white font-bold bg-black rounded-md p-2 hover:bg-gray-500' onClick={()=>{
                   Swal.fire({
                     position: 'center',

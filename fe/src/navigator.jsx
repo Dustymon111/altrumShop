@@ -1,10 +1,11 @@
 import { AiFillHome } from "react-icons/ai";
 import { IoCart } from "react-icons/io5";
+import { MdPerson } from "react-icons/md";
 export default function Navigator() {
     return(
-            <div className="h-full flex justify-between bg-black text-white font-bold p-7 text-xl p">
+            <div className="z-50 h-full flex justify-between bg-black text-white font-bold p-7 text-xl sticky top-0">
                 <h1 className="p-2 text-2xl">Altrumshop</h1>
-                <div className="w-72 flex justify-between p-2">
+                <div className="w-96 flex justify-between p-2">
                     <a className="flex justify-between w-24 hover:text-gray-600 text-xl" href="/">
                     <AiFillHome size={28}/>
                         Home
@@ -12,6 +13,10 @@ export default function Navigator() {
                     <a className="flex justify-between w-20 hover:text-gray-600 text-xl" href="/cart">
                         <IoCart size={32}/>
                         Cart
+                    </a>
+                    <a className="flex justify-between hover:text-gray-600 text-xl" href="/login">
+                    <MdPerson size={32}/>
+                        Sign Out
                     </a>
                 </div>
             </div>  
