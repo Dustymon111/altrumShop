@@ -6,7 +6,7 @@ export default function Navigator() {
             <div className="z-50 h-full flex justify-between bg-black text-white font-bold p-7 text-xl sticky top-0">
                 <h1 className="p-2 text-2xl">Altrumshop</h1>
                 <div className="w-96 flex justify-between p-2">
-                    <a className="flex justify-between w-24 hover:text-blue-400 text-xl" href="/">
+                    <a className="flex justify-between w-24 hover:text-blue-400 text-xl" href="/home">
                     <AiFillHome size={28}/>
                         Home
                     </a>
@@ -14,7 +14,7 @@ export default function Navigator() {
                         <IoCart size={32}/>
                         Cart
                     </a>
-                    <a className="flex justify-between hover:text-red-600 text-xl" href="/login">
+                    <a className="flex justify-between hover:text-red-600 text-xl" href="/">
                     <MdPerson size={32}/>
                         Sign Out
                     </a>

@@ -10,9 +10,9 @@ import Register from './register'
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <Routes>
-            <Route path='/' element = {<App/>}/>
+            <Route path='/home' element = {<App/>}/>
             <Route path='/cart' element = {<Cart/>}/>
-            <Route path='/login' element = {<Login/>}/>
+            <Route path='/' element = {<Login/>}/>
             <Route path='/register' element = {<Register/>}/>
         </Routes>
     </BrowserRouter>

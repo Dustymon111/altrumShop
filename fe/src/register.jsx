@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom";
-import './Cart.css'
 import Swal from 'sweetalert2'
+
 export default function Login() {
     const [username, setusername] = useState("")
     const [password, setpassword] = useState("")
@@ -21,7 +21,7 @@ export default function Login() {
       .then(res => res.json())
       .then(data => {
           if (data.message === "Registrasi Success") {
-              navigate('/login')
+              navigate('/')
               Swal.fire({
                   icon: 'success',
                   title: 'Successfully Register',
@@ -76,7 +76,7 @@ export default function Login() {
                     Register
                   </button>
                 <p className="text-sm text-white pt-6">Already have an account?</p>
-                <a href="/login">
+                <a href="/">
                 <button
                     type="button"
                     className="my-4 text-black font-bold w-full bg-white p-2 rounded-md hover:bg-gray-600 hover:text-white"

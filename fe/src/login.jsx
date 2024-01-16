@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import './Cart.css'
 import Swal from 'sweetalert2'
+
 export default function Login() {
     const [username, setusername] = useState("")
     const [password, setpassword] = useState("")
