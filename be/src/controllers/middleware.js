@@ -1,10 +1,10 @@
 // middlewareValidation.js 
 // MIDDLEWARE-------------------------------------------------------------------------------
-var jwt = require('jsonwebtoken');
+import jwt from 'jsonwebtoken'
 const JWT_SECRET = 'eriyfbercbieobu3hrurebuberHBububUOBUOUBuo3728u'
 
 
-const middlewareValidation = (req,res,next) =>{
+export const middlewareValidation = (req,res,next) =>{
     // get token from header
         const token = JSON.parse(req.headers['x-access-token']);
         // console.log(token.token)
@@ -19,5 +19,4 @@ const middlewareValidation = (req,res,next) =>{
         });
     }
     
-
-module.exports = middlewareValidation;
+export default middlewareValidation

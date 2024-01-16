@@ -1,11 +1,19 @@
-.boxcart{
-    width: 100%;
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
+
 
 .namaTokoCart{
     margin-top: 24px;
     font-size: large;
 }
+
+b {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    padding-right: 10px; /* Ensures colon does not overlay the text */
+  }
+
+b::after {
+    content: ":";
+    position: absolute;
+    right: 10px;
+  }

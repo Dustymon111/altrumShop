@@ -16,7 +16,7 @@ con.connect(error => {
   con.query(`CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
 
-    email VARCHAR(255),
+    username VARCHAR(255),
     password VARCHAR(255)
 )`, (err, result) => {
     if (err) {
@@ -62,7 +62,6 @@ con.connect(error => {
           } else {
             check = result
             if (check.length === 0) {
-              console.log(check);
             products.forEach(detail => {
           //query insert initial product data
           con.query(`insert into shop (nama, harga, jumlah, diskon, value, image) values ('${detail.nama}', '${detail.harga}', '${detail.jumlah}', '${detail.diskon}', '${detail.value}', '${detail.image}')`,

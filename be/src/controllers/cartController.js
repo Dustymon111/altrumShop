@@ -27,8 +27,8 @@ export const insertProduct = (req,res) => {
 // UPDATE DATA
 export const updateCartProduct = (req,res) => {
     const id = req.params.id
-    const { nama, img, harga} = req.body
-    config.query(`UPDATE cart SET namaBarang = '${nama}', harga = '${harga}', image = '${img}' WHERE id = ${id}`, (err, result) => {
+    const {jumlah} = req.body
+    config.query(`UPDATE cart SET jumlah = '${jumlah}' WHERE id = ${id}`, (err, result) => {
         if (err) {
             console.log(err);
         } else {

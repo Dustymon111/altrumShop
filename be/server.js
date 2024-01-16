@@ -4,6 +4,7 @@ import express from "express"
 import cors from "cors"
 import shopRouter from "./src/router/shopRouter.js" 
 import cartRouter from "./src/router/cartRouter.js" 
+import userRouter from "./src/router/userRouter.js" 
 
 
 dotenv.config()
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', shopRouter);
 app.use('/api', cartRouter);
+app.use(userRouter);
 app.listen(3000, () => {
     console.log('Server Started');
 });
